@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Miradouro.P1.PerguntaUmRotaMiradouro"
+    android:background="@color/verde">
+    <TextView
+        android:id="@+id/tit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirijam-se para a Capela Sant'ana"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1- No largo onde se encontra a capela, para além de uma pequena área de lazer, temos uma vista deslumbrante."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tit"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/pergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro"
+        android:text="Quantas janelas vêem na capela?"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/resposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:hint="Introduza a Resposta"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/pergunta"
+        android:layout_marginTop="16dp"
+        android:maxLength="20"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="@color/verde"/>
+    <TextView
+        android:id="@+id/botaocap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:text="Clique no Botao para tirar foto"
+        android:textColor="@color/white"
+        android:layout_below="@id/pergunta"
+        android:textSize="20dp"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/buttonSubmeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/resposta"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_submeter"
+        />
+
+
+
+
+</RelativeLayout>
